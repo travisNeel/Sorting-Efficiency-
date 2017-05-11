@@ -345,11 +345,11 @@ void test_quicksort(int init_size=10, int multiplier=2, int repetitions=5,
 int main(int argc, char** argv) {
 	cout<<"start...\n";
 	
-	// test_arrays(5, 2, 5);
+	test_arrays(5, 2, 5);
 	test_selection_sort();
 	test_selection_sort1a();
-	// test_selection_sort(10, 2, 5, decreasing);
-	// test_quicksort(10, 2, 5, random);
+	test_selection_sort(10, 2, 5, decreasing);
+	test_quicksort(10, 2, 5, RANDOM);
 	display_timed_selection_sorts();
 	
 	cout<<"\n...stop\n";
